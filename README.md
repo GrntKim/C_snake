@@ -12,3 +12,6 @@ Simple text based snake game implemented with C and the ncurses library
 
 #### Cleaning executable
     make clean
+
+#### How to control
+	WASD or Directional keys
