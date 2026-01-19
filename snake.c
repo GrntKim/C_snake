@@ -41,16 +41,16 @@ int main(void)
     do {
         key = wgetch(game_screen);
         switch (key) {
-            case KEY_LEFT:
+            case 'a': case 'A': case KEY_LEFT:
                 next_row = 0; next_col = -1;
                 break;
-            case KEY_RIGHT:
+            case 'd': case 'D': case KEY_RIGHT: 
                 next_row = 0; next_col = 1;
                 break;
-            case KEY_UP:
+            case 'w': case 'W': case KEY_UP: 
                 next_row = -1; next_col = 0;
                 break;
-            case KEY_DOWN:
+            case 's': case 'S': case KEY_DOWN:   
                 next_row = 1; next_col = 0;
                 break;
         }
